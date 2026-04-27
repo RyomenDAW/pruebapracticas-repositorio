@@ -3,14 +3,14 @@
 <head>     
     <meta charset="UTF-8">     
     <title>Nuevo Lead</title>     
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min
-    .css" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
 </head> 
 <body class="p-4">     
     <h2>Añadir Lead</h2>     
     <form id="form-lead" class="mb-5">         
         <input type="text" id="nombre" class="form-control mb-2" 
-placeholder="Nombre" required>         
+placeholder="Nombre" required>
+        
         <input type="text" id="empresa" class="form-control mb-2" 
 placeholder="Empresa" required>         
         <button type="submit" class="btn btn-dark">Guardar Lead</button>         
@@ -31,9 +31,10 @@ placeholder="Empresa" required>
          document.getElementById('form-lead').addEventListener('submit', 
          function(e) {             
             e.preventDefault();            
-            const nombre = document.getElementById('nombre').value;             
+            const nombre = document.getElementById('nombre').value; 
+                       
             const empresa = document.getElementById('empresa').value;             
-            guardarLead({ nombre, empresa });             
+            guardarLead({ nombre,empresa });             
             alert('Guardado. Ve a la lista para verlo.');        
              });           
              // 2. Enviar a API real (fetch POST)         
