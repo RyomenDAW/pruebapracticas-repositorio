@@ -1,5 +1,5 @@
 {
-  "name": "vue-practica",
+  "name": "frontend-2",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,9 +12,7 @@
     "vue": "^3.5.32"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "^4.2.4",
     "@vitejs/plugin-vue": "^6.0.6",
-    "tailwindcss": "^4.2.4",
     "vite": "^8.0.10"
   }
 }
